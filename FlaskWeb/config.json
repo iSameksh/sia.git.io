@@ -1,0 +1,15 @@
+{
+
+
+   "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql://root:@localhost/S.I.A",
+    "prod_uri": "mysql://root:@localhost/S.I.A",
+    "gmail-user": "samekshd@gmail.com",
+    "gmail-password": "gpxjmhmzegqbjize"
+  }
+
+
+
+}

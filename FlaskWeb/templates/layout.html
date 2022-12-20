@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>S.I.A</title>
+    <link rel="stylesheet" href="{{url_for ('static', filename='assets/vendors/animate.css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{url_for ('static', filename='assets/css/style.css') }}">
+    <script src="{{url_for ('static', filename='assets/vendors/jquery/jquery.min.js') }}"></script>
+    <script src="{{url_for ('static', filename='assets/js/loader.js') }}"></script>
+</head>
+
+
+{% block body %}  {% endblock %}
+
+
+    <footer class="hiro-footer wow fadeInUp">
+        <div class="container d-flex flex-wrap justify-content-lg-between align-items-center">
+            <p class="mb-0 footer-text">© <a href="https://www.bootstrapdash.com" target="_blank" rel="noopener noreferrer" class="text-reset">S.I.A WEBSITE</a> 2020. All rights reserved.</p>
+            <nav class="footer-nav nav">
+                <a href="#!" class="nav-link">Terms and Conditions</a>
+                <a href="#!" class="nav-link">Privacy Policy</a>
+                <a href="#!" class="nav-link">Cookie Policy</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="{{url_for ('static', filename='assets/vendors/wowjs/wow.min.js') }}"></script>
+    <script src="{{url_for ('static', filename='assets/vendors/popper.js/popper.min.js') }}"></script>
+    <script src="{{url_for ('static', filename='assets/vendors/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+    <script src="{{url_for ('static', filename='assets/js/main.js') }}"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

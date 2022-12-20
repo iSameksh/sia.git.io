@@ -1,0 +1,469 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<body>
+    <div class="hiro-loader"></div>
+    <header class="hiro-header home-header" id="top">
+        <nav>
+            <div class="container">
+                <div class="hiro-nav">
+                    <h1> S.I.A </h1>
+                    <a href="index.html" class="nav-brand">
+                        <!--  <img src="{{url_for ('static', filename='assets/images/logo.svg') }} " alt="S.I.A" class="logo">
+                        <img src="{{url_for ('static', filename='assets/images/logo_white.svg') }}" alt="Hiro" class="logo-white">
+
+ -->
+                    </a>
+                    <button class="hiro-nav-popup-toggle">
+                        <svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Hiro" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="hiro-agency" transform="translate(-964.000000, -37.000000)" fill="#FFFFFF">
+                                    <g id="Menu" transform="translate(964.000000, 37.000000)">
+                                        <g id="menu">
+                                            <rect id="Rectangle" fill-rule="nonzero" x="-8.05281767e-14" y="7.50795322"
+                                                width="19.9609942" height="2.4951462"></rect>
+                                            <rect id="Rectangle" fill-rule="nonzero" x="-8.05281767e-14" y="14.9964327"
+                                                width="19.9609942" height="2.4951462"></rect>
+                                            <rect id="Rectangle" fill-rule="nonzero" x="-8.05281767e-14"
+                                                y="0.0194736842" width="19.9609942" height="2.4951462"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="container wow fadeInUp">
+            <div id="hiroHeaderCarousel" class="hiro-header-carousel carousel slide" data-ride="carousel"
+                data-interval="3500">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1 class="carousel-item-title" data-animation="animated fadeInRight" data-number="01">
+                                    <span>Website Development</span>
+                                </h1>
+                                <p class="carousel-item-description" data-animation="animated fadeInRight">We are one of
+                                    the Best Web Design Digital Marketing Company in Mumbai. We help tell your business
+                                    story.</p>
+                                <a href="#!" class="carousel-item-link link-hover-fx"
+                                    data-animation="animated fadeInRight">READ MORE</a>
+                                <ul class="carousel-item-social-links nav" data-animation="animated fadeInRight">
+                                    <li>
+                                        <a href="#!" class="link-hover-fx">FACEBOOK</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="link-hover-fx">INSTAGRAM</a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#!" class="link-hover-fx">BEHANCE</a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="{{url_for ('static', filename='assets/images/wEB-DESIGN.jpg') }}"
+                                    alt="Remarkable Digital Products" class="img-fluid w-100 rounded" width="372px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1 class="carousel-item-title" data-animation="animated fadeInRight" data-number="02">
+                                    <span>Content Marketing</span>
+                                </h1>
+                                <p class="carousel-item-description" data-animation="animated fadeInRight">
+                                    Content is the king of the internet, more quality content more traffic, more traffic
+                                    more visitors, more visitors more sales, more sales, more money.
+
+                                </p>
+                                <a href="#!" class="carousel-item-link link-hover-fx"
+                                    data-animation="animated fadeInRight">READ MORE</a>
+                                <ul class="carousel-item-social-links nav" data-animation="animated fadeInRight">
+                                    <li>
+                                        <a href="#!" class="link-hover-fx">FACEBOOK</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="link-hover-fx">INSTAGRAM</a>
+                                    </li>
+                                    <!--    <li>
+                                        <a href="#!" class="link-hover-fx">BEHANCE</a>
+                                    </li>
+ -->
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <img src=" {{url_for ('static', filename= 'assets/images/content-marketing.jpg' ) }}"
+                                    alt="<span>Remarkable Digital Products</span>" class="img-fluid w-100 rounded"
+                                    width="372px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1 class="carousel-item-title" data-animation="animated fadeInRight" data-number="03">
+                                    <span>Search Engine Optimization</span>
+                                </h1>
+                                <p class="carousel-item-description" data-animation="animated fadeInRight">
+                                    We have a team trained S.E.O experts, who can help your website rank on Google's
+                                    first page.
+                                </p>
+                                <a href="#!" class="carousel-item-link link-hover-fx"
+                                    data-animation="animated fadeInRight">READ MORE</a>
+                                <ul class="carousel-item-social-links nav" data-animation="animated fadeInRight">
+                                    <li>
+                                        <a href="#!" class="link-hover-fx">FACEBOOK</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="link-hover-fx">INSTAGRAM</a>
+                                    </li>
+                                    <!--  <li>
+                                        <a href="#!" class="link-hover-fx">BEHANCE</a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="{{url_for ('static', filename= 'assets/images/seo.png ' ) }}"
+                                    alt="Remarkable Digital Products" class="img-fluid w-100 rounded" width="372px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#hiroHeaderCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#hiroHeaderCarousel" data-slide-to="1"></li>
+                    <li data-target="#hiroHeaderCarousel" data-slide-to="2"></li>
+                </ol>
+            </div>
+        </div>
+    </header>
+    <div class="hiro-nav-popup-modal">
+        <div class="hiro-nav-popup-modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 menu-wrapper">
+                        <ul class="nav hiro-main-nav">
+                            <li class="nav-item">
+                                <a href="/" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#works" class="nav-link">Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/contact" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 blog-posts text-white">
+                        <h5 class="popup-blog-headng">Blog</h5>
+                        <div class="media mb-4">
+                            <img src="{{url_for ('static', filename='assets/images/Blog_small2.jpg') }} " alt="blog"
+                                width="86px" class="img-fluid mr-4">
+                            <div class="media-body align-self-end">
+                                <h5 class="popup-blog-post-title">Ambitious <br> designs</h5>
+                            </div>
+                        </div>
+                        <div class="media mb-4">
+                            <img src="{{url_for ('static', filename='assets/images/Blog_small1.jpg')}}" alt="blog"
+                                width="86px" class="img-fluid mr-4">
+                            <div class="media-body align-self-end">
+                                <h5 class="popup-blog-post-title">The Collection <br> Cover Archive</h5>
+                            </div>
+                        </div>
+                        <p><a href="/blog" class="text-white link-hover-fx text-decoration-none"
+                                class="font-weight-medium">View more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT SECTION -->
+    <section class="bg-primary hiro-section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column justify-content-center wow fadeInUp">
+                    <h2 class="section-title mb-3">ABOUT US</h2>
+                    <p class="section-text-ct">
+                        We are Expert Website Designers and Developers, Web Hosting, S.E.O And Professional Digital
+                        Marketing Experts In bhayandar.S.I.A specializes In Developing world class Online E-presence,
+                        corporate Identity management software development services.
+                    </p>
+                </div>
+                <div class="col-md-6 wow fadeInUp">
+                    <img src="{{url_for ('static', filename='assets/images/img_3.png') }}" class="w-100 mb-5"
+                        alt="Digital Product Design">
+                    <p class="section-text-light">Best Website Makers</p>
+                    <button class="hiro-btn-outline">VIEW MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hiro-section" id="services">
+        <div class="container">
+            <div class="service-section">
+                <h2 class="section-title career-section-title">Our Services</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0 wow fadeInUp">
+                        <h6 class="service-category-title">Search Engine Optimization</h6>
+                        <ul class="service-list list-group list-group-flush">
+                            <!-- <li class="list-group-item">UI & UX design</li>
+                            <li class="list-group-item">Graphic Design & identity</li>
+                            <li class="list-group-item">Video Production</li>
+                            <li class="list-group-item">Market Analysis</li>
+                            <li class="list-group-item">Deep Campaign Strategy</li>
+
+ -->
+                            <p>We are one of the Best Web Design Digital Marketing Company in Bhayandar. We help tell
+                                your business story.</p>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0 wow fadeInUp">
+                        <h6 class="service-category-title">Content Marketing</h6>
+                        <ul class="service-list list-group list-group-flush">
+                            <!-- <li class="list-group-item">UI & UX design</li>
+                            <li class="list-group-item">Graphic Design & identity</li>
+                            <li class="list-group-item">Video Production</li>
+                            <li class="list-group-item">Market Analysis</li>
+                            <li class="list-group-item">Deep Campaign Strategy</li> -->
+                            <p>We are one of the Best Web Design Digital Marketing Company in Bhayandar. We help tell
+                                your business story.</p>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0 wow fadeInUp">
+                        <h6 class="service-category-title">Website Development</h6>
+                        <ul class="service-list list-group list-group-flush">
+                            <!--  <li class="list-group-item">UI & UX design</li>
+                            <li class="list-group-item">Graphic Design & identity</li>
+                            <li class="list-group-item">Video Production</li>
+                            <li class="list-group-item">Market Analysis</li>
+                            <li class="list-group-item">Deep Campaign Strategy</li> -->
+                            <p>We are one of the Best Web Design Digital Marketing Company in Bhayandar. We help tell
+                                your business story.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="projects-section hiro-section" id="works">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6wow fadeInUp">
+                    <div class="project-card wow fadeInUp">
+                        <img src="{{url_for ('static', filename='assets/images/Works4.png')}}" alt="Project"
+                            class="project-thumbnail">
+                        <h6 class="project-title">See what we do</h6>
+                        <p class="Project-category">Branding system / Motion design </p>
+                    </div>
+                    <div class="project-card wow fadeInUp">
+                        <img src="{{url_for ('static', filename='assets/images/Works2.png') }}" alt="Project"
+                            class="project-thumbnail">
+                        <h6 class="project-title">See what we do</h6>
+                        <p class="Project-category">Branding system / Motion design </p>
+                    </div>
+                </div>
+                <div class="col-md-6 project-column-indented">
+                    <div class="project-card wow fadeInUp">
+                        <img src="{{url_for ('static', filename='assets/images/Works3.png') }}" alt="Project"
+                            class="project-thumbnail">
+                        <h6 class="project-title">See what we do</h6>
+                        <p class="Project-category">Branding system / Motion design </p>
+                    </div>
+                    <div class="project-card wow fadeInUp">
+                        <img src="{{url_for ('static', filename='assets/images/Works1.png') }}" alt="Project"
+                            class="project-thumbnail">
+                        <h6 class="project-title">See what we do</h6>
+                        <p class="Project-category">Website Development</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <a href="#!" class="load-more-link">VIEW ALL PROJECTS</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="team-section hiro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 wow fadeInUp">
+                    <h2 class="section-title">Meet <br> The Team</h2>
+                    <p class="section-text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud.</p>
+                    <div>
+                        <a class="carousel-control-prev" href="#hiroTeamCarousel" role="button" data-slide="prev">
+                            <img src="{{url_for ('static', filename='assets/images/arrow_left.png') }}" alt="left arrow"
+                                width="20px">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#hiroTeamCarousel" role="button" data-slide="next">
+                            <img src="{{url_for ('static', filename='assets/images/Arrow_right.png') }}"
+                                alt="right arrow" width="20px">
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7 wow fadeInRight">
+                    <div id="hiroTeamCarousel" class="hiro-team-carousel carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="team-card" data-animation="animated flipInY">
+                                            <img src="{{url_for ('static', filename='assets/images/ishi.png') }}" alt="Edwards" class="team-member-thumbnail">
+ -->
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name"> Ishika Sunam</h6>
+                                                <p class="team-member-title">Designer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="team-card featured" data-animation="animated flipInY">
+                                             <img src="{{url_for ('static', filename='assets/images/sam.png') }}" alt="Edwards" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Sameksh</h6>
+                                                <p class="team-member-title">Full-Stack Developer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="team-card" data-animation="animated flipInY">
+                                            <img src="{{url_for ('static', filename='assets/images/ishi.png') }}" alt="Edwards" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Apurva Parab</h6>
+                                                <p class="team-meber-title">Project Manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    <div class="col-sm-6">
+                                        <div class="team-card featured" data-animation="animated flipInY">
+                                            <img src="{{url_for ('static', filename='assets/images/img_4.png') }}" alt="Edwards" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Edwards</h6>
+                                                <p class="team-meber-title">CTO, Co-Founder</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                                    <!--  <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="team-card" data-animation="animated flipInY">
+                                            <img src="{{url_for ('static', filename='assets/images/img_5.png')}}" alt="Paulina Gayoso" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Paulina Gayoso</h6>
+                                                <p class="team-meber-title">Project Manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+ -->
+                                    <div class="col-sm-6" data-animation="animated flipInY">
+                                        <div class="team-card featured">
+                                            <!-- <img src="{{url_for ('static', filename='assets/images/img_4.png')}}" alt="Edwards" class="team-member-thumbnail"> -->
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Apurva Parab</h6>
+                                                <p class="team-meber-title">Project Manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="career-section hiro-section bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="section-title wow fadeInLeft">
+                        Trainings <br> Work with us
+                    </h2>
+                </div>
+                <div class="col-md-6 wow fadeInRight">
+                    <p class="section-text-ct mb-5">
+                        We train, we equip with the desired Digital Marketing skill that will give you edge in the job
+                        market and help you make more money online even as a Freelancer.
+
+                    </p>
+                    <button class="hiro-btn-outline">VIEW MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section hiro-section">
+        <div class="container wow fadeInUp">
+            <h6 class="font-weight-semibold mb-4 mb-md-0">At Explose, it’s always storytelling time. Swing by & share
+                yours.</h6>
+            <h2 class="section-title">Let's connect to each other.</h2>
+            <div class="contact-address">
+                <div class="row">
+                    <div class="col-md-5">
+                        <p class="font-weight-medium">Ground Floor,Bhag Villa, <br> Mudh Isla, <br> Mumbai.</p>
+                    </div>
+                    <div class="col-md-5 mb-4 mb-md-0">
+                        <p class="font-weight-medium">INDIA:+91 8828633613 <br> samekshd@gmail.com</p>
+                        <ul class="nav contact-social-links">
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <img src="{{url_for ('static', filename='assets/images/twitter@1x.svg')}}"
+                                        alt="twitter">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <img src="{{url_for ('static', filename='assets/images/linkedin@1x.svg')}}"
+                                        alt="linkedin">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <img src="{{url_for ('static', filename='assets/images/facebook@1x.svg')}}"
+                                        alt="facebook">
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <img src="{{url_for ('static', filename='assets/images/behance@1x.svg')}}" alt="behance">
+                                </a>
+                            </li>
+ --> <!--  <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <img src="{{url_for ('static', filename='assets/images/medium@1x.svg')}}" alt="medium">
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <a href="#top" class="go-top-btn">
+                            <img src="{{url_for ('static', filename='assets/images/arrow_up@1x.svg')}}" alt="arrow up">
+                            <span class="sr-only">Go to top</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {% endblock %}
